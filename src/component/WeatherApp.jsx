@@ -30,7 +30,7 @@ function WeatherApp() {
   useEffect(() => {
     search(inputValue);
     search("");
-  }, []);
+  }, [inputValue]);
 
   return (
     <div className="weartherApp ">
