@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.weartherApp {
+  background-image: url(./component/asert/bg.avif);
+  background-size: cover;
+  max-width: 685px;
+  background-color: #eee;
+  border-radius: 8px;
+  height: 700px;
+  padding: 30px;
+  margin: 30px auto;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+}
+.search-details {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 122px;
+}
+.search-container input {
+  padding: 5px 15px;
+  border: 1px solid #d0cfce;
+  outline: none;
+  width: 70%;
+  border-radius: 5px;
+}
+.search-container input:focus {
+  border: 1px solid #000a0d;
+  transition: 0.35s ease;
+  color: #000000;
+}
+.search-icon {
+  position: absolute;
+  right: 14%;
+  top: 2%;
+  border: none;
+  font-size: 20px;
+  background: transparent;
+  margin-left: -4px;
+}
+.weather-info {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.weather-info p {
+  font-size: 60px;
+  font-weight: 600;
+  color: #000000a0;
+}
+.weather-info span {
+  font-size: 54px;
+  font-weight: 300;
+  color: #60abff;
+  text-align: center;
+}
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+/* clock */
+.clock {
+  background-color: rgba(211, 211, 211, 0.6);
+  max-width: 266px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  color: #000000a0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.time #ampm {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.time span {
+  font-size: 34px;
+}
+#calender {
+  font-size: 20px;
+  margin-left: 32px;
 }
