@@ -4,16 +4,13 @@
   font-family: "Poppins", sans-serif;
 }
 
-.weartherApp {
-  background-image: url(./component/asert/bg.avif);
+weartherApp {
+  background-image: url(http://localhost:3000/static/media/bg.e85a18d….avif);
   background-size: cover;
-  max-width: 685px;
   background-color: #eee;
   border-radius: 8px;
   height: 700px;
   padding: 30px;
-  margin: 30px auto;
-
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .search-container {
@@ -28,7 +25,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 122px;
+  margin: 122px;
 }
 .search-container input {
   padding: 5px 15px;
@@ -45,7 +42,7 @@
 .search-icon {
   position: absolute;
   right: 14%;
-  top: 2%;
+  top: 6%;
   border: none;
   font-size: 20px;
   background: transparent;
@@ -108,4 +105,20 @@
 #calender {
   font-size: 20px;
   margin-left: 32px;
+}
+
+@media (max-width: 375px) {
+  .search-container {
+    align-items: center;
+    width: 300px;
+  }
+  .search-details {
+    margin: 122px;
+    gap: 58px;
+  }
+}
+@media (min-width: 390px) {
+  .search-container {
+    width: 388px;
+  }
 }
