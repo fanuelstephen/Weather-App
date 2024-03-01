@@ -4,12 +4,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-weartherApp {
-  background-image: url(http://localhost:3000/static/media/bg.e85a18d….avif);
+.weartherApp {
+  background-image: url(./component/asert/bg.avif);
   background-size: cover;
   background-color: #eee;
   border-radius: 8px;
-  height: 700px;
+  height: 500px;
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -42,7 +42,7 @@ weartherApp {
 .search-icon {
   position: absolute;
   right: 14%;
-  top: 6%;
+  top: 2%;
   border: none;
   font-size: 20px;
   background: transparent;
@@ -113,12 +113,18 @@ weartherApp {
     width: 300px;
   }
   .search-details {
-    margin: 122px;
-    gap: 58px;
+    margin: 2px;
+  }
+
+  .weartherApp {
+    height: 500px;
   }
 }
 @media (min-width: 390px) {
   .search-container {
-    width: 388px;
+    width: 327px;
+  }
+  .search-details {
+    margin: 2px;
   }
 }
