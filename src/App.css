@@ -8,8 +8,8 @@
   background-image: url(./component/asert/bg.avif);
   background-size: cover;
   background-color: #eee;
-  border-radius: 8px;
-  height: 500px;
+
+  height: 700px;
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -117,7 +117,8 @@
   }
 
   .weartherApp {
-    height: 500px;
+    padding-top: 7rem;
+    height: 700px;
   }
 }
 @media (min-width: 390px) {
